@@ -129,9 +129,11 @@
   <ItemGroup>
     <ClCompile Include="MazeEngine.cpp" />
     <ClCompile Include="HouseOfMouse.cpp" />
+    <ClCompile Include="PathLiner.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MazeEngine.h" />
+    <ClInclude Include="PathLiner.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

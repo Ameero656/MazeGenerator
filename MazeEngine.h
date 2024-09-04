@@ -7,6 +7,7 @@
 #include <string>
 #include <thread>
 
+using namespace std;
 
 class MazeEngine {
 public:
@@ -23,9 +24,9 @@ public:
         Cell(bool north=true, bool south=true, bool east=true, bool west=true, int type=-1);
     };
 
-    void displayMaze(const std::vector<std::vector<MazeEngine::Cell>>& maze, std::pair<int, int> currentPos = { -1, -1 }, int size = 3);
+    void displayMaze(const vector<vector<MazeEngine::Cell>>& maze, int size = 3, vector<pair<int, int>> lineQueue = {});
 
-	void generateMaze(std::vector<std::vector<Cell>>& maze, std::pair<int, int> currentPos, bool watcher = false, int watcherSpeed = 100);
+	void generateMaze(vector<vector<Cell>>& maze, pair<int, int> currentPos, bool watcher = false, int watcherSpeed = 100);
     
     
 private:
